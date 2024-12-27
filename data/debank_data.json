@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Wallet",
+        "worth": "20.0",
+        "platform": "Cronos DeFi"
+    },
+    {
+        "name": "VENO",
+        "worth": "528.0",
+        "platform": "Cronos DeFi"
+    },
+    {
+        "name": "Single Finance",
+        "worth": "443.0",
+        "platform": "Cronos DeFi"
+    },
+    {
+        "name": "Beefy",
+        "worth": "112.0",
+        "platform": "Cronos DeFi"
+    },
+    {
+        "name": "Bored Candy City",
+        "worth": "15.0",
+        "platform": "Cronos DeFi"
+    },
+    {
+        "name": "Wallet",
+        "worth": "60.0",
+        "platform": "BNB DeFi"
+    },
+    {
+        "name": "PancakeSwap V3",
+        "worth": "160.0",
+        "platform": "BNB DeFi"
+    },
+    {
+        "name": "WOO Network",
+        "worth": "138.0",
+        "platform": "BNB DeFi"
+    }
+]
