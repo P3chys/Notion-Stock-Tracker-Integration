@@ -6,14 +6,16 @@ from sinks.notion_sink import NotionSink
 from services.web_driver_service import WebDriverService
 from config.settings import Settings
 from sources.binance_source import BinanceSource
+from sources.cryptocom_source import CryptoComSource
 
 class PortfolioTracker:
     def __init__(self, settings: Settings):
         self.web_driver_service = WebDriverService()
         self.sources = [
-            Trading212Source(settings),
-            DebankSource(settings, self.web_driver_service),
-            BinanceSource(settings)
+            #Trading212Source(settings),
+            #DebankSource(settings, self.web_driver_service),
+            #BinanceSource(settings),
+            CryptoComSource(settings)
         ]
         self.sink = NotionSink(settings)
 

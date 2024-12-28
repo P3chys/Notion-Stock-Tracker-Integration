@@ -12,6 +12,8 @@ class Settings:
     debank_sources: List[Tuple[str, str]]
     binance_api_key: str
     binance_api_secret: str
+    cryptocom_api_key: str
+    cryptocom_api_secret: str
 
     @classmethod
     def load_from_env(cls) -> 'Settings':
@@ -27,5 +29,8 @@ class Settings:
                 ("https://debank.com/profile/0x5d1c953d6b07c7fbc6541139cc1293408d58854e?chain=bsc", "BNB DeFi")
             ],
             binance_api_key=os.getenv('BINANCE_API_KEY'),
-            binance_api_secret=os.getenv('BINANCE_API_SECRET')
+            binance_api_secret=os.getenv('BINANCE_API_SECRET'),
+            cryptocom_api_key=os.getenv('CRYPTOCOM_API_KEY'),
+            cryptocom_api_secret=os.getenv('CRYPTOCOM_API_SECRET')
+            
         )
