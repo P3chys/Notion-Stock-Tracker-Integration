@@ -1,8 +1,8 @@
 from typing import List
 from datetime import datetime
 from notion_client import Client
-from models.position import Position
-from interfaces.data_sink import DataSink
+from app.models.position import Position
+from app.interfaces.data_sink import DataSink
 from config.settings import Settings
 
 class NotionSink(DataSink):

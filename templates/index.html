@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tracker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">Portfolio Tracker</h1>
+        </header>
+
+        <!-- Sources Section -->
+        <section class="mb-8">
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold text-gray-800">Available Sources</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {% for source in sources %}
+                        <div class="border rounded-lg p-4 bg-gray-50">
+                            <h3 class="text-lg font-medium text-gray-900 mb-3">{{ source }}</h3>
+                            <button onclick="runUpdate('{{ source }}')" 
+                                    class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors">
+                                Update Now
+                            </button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Status Messages -->
+        <div id="statusMessage" class="mb-8 hidden">
+            <div class="px-6 py-4 rounded-lg" role="alert">
+                <span class="block sm:inline message-text"></span>
+            </div>
+        </div>
+
+        <!-- Schedules Section -->
+        <section class="mb-8">
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                    <h2 class="text-xl font-semibold text-gray-800">Update Schedules</h2>
+                    <button id="addScheduleBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors">
+                        Add Schedule
+                    </button>
+                </div>
+                <div class="p-6">
+                    <div id="schedulesList" class="space-y-4">
+                        <!-- Schedules will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Schedule Modal -->
+    <div id="scheduleModal" class="fixed inset-0 bg-black bg-opacity-50 hidden">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+                <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                    <h3 class="text-lg font-semibold text-gray-800">Create Schedule</h3>
+                    <button class="text-gray-500 hover:text-gray-700" id="closeModalBtn">&times;</button>
+                </div>
+                <form id="scheduleForm" class="p-6 space-y-4">
+                    <!-- Schedule Name -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" name="name" required class="w-full px-3 py-2 border rounded-md">
+                    </div>
+
+                    <!-- Schedule Type -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Type</label>
+                        <select name="scheduleType" class="w-full px-3 py-2 border rounded-md">
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                        </select>
+                    </div>
+
+                    <!-- Day of Week (for weekly schedules) -->
+                    <div id="dayOfWeekField" class="hidden">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Day of Week</label>
+                        <select name="dayOfWeek" class="w-full px-3 py-2 border rounded-md">
+                            <option value="0">Sunday</option>
+                            <option value="1">Monday</option>
+                            <option value="2">Tuesday</option>
+                            <option value="3">Wednesday</option>
+                            <option value="4">Thursday</option>
+                            <option value="5">Friday</option>
+                            <option value="6">Saturday</option>
+                        </select>
+                    </div>
+
+                    <!-- Time -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Time (HH:MM)</label>
+                        <input type="time" name="time" required class="w-full px-3 py-2 border rounded-md">
+                    </div>
+
+                    <!-- Sources Selection -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Sources</label>
+                        <div class="border rounded-md p-3 space-y-2">
+                            {% for source in sources %}
+                            <label class="flex items-center">
+                                <input type="checkbox" name="sources" value="{{ source }}" 
+                                       class="mr-2">
+                                {{ source }}
+                            </label>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
+                            Create Schedule
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

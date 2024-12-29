@@ -1,8 +1,8 @@
 import requests
 from decimal import Decimal
 from typing import List
-from models.position import Position
-from interfaces.data_source import DataSource
+from app.models.position import Position
+from app.interfaces.data_source import DataSource
 from config.settings import Settings
 
 class Trading212Source(DataSource):

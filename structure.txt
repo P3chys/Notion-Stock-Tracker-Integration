@@ -1,0 +1,38 @@
+portfolio-tracker/
+├── app/
+│   ├── __init__.py
+|   |── portfolio_manager.py
+│   ├── database.py           # New: Database configuration
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── position.py       # Existing: Position model
+│   │   └── schedule.py       # New: Schedule model
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── scheduler.py      # New: Scheduler service
+│   │   └── web_driver.py     # Existing: WebDriver service
+│   ├── sources/
+│   │   ├── __init__.py
+│   │   ├── trading212.py     # Existing: Trading212 source
+│   │   └── debank.py         # Existing: DeBank source
+│   ├── sinks/
+│   │   ├── __init__.py
+│   │   └── notion.py         # Existing: Notion sink
+│   ├── interfaces/
+│   │   ├── __init__.py
+│   │   ├── data_source.py    # Existing: Data source interface
+│   │   └── data_sink.py      # Existing: Data sink interface
+│   └── routes/
+│       ├── __init__.py
+│       └── api.py            # New: API endpoints
+├── static/
+│   └── js/
+│       └── main.js           # New: Frontend JavaScript
+├── templates/
+│   └── index.html           # New: Main dashboard template
+├── config/
+│   ├── .env
+│   └── settings.py          # Existing: Settings configuration
+├── app.py                   # Modified: Main application entry point
+├── requirements.txt         # Modified: Project dependencies
+└── README.md               # Existing: Project documentation

@@ -1,5 +1,30 @@
+# Web Framework
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# Portfolio Sources
 selenium==4.16.0
 webdriver-manager==4.0.1
 notion-client==2.1.0
-python-dotenv==1.0.0
 requests==2.31.0
+
+# Database
+SQLAlchemy==1.4.41
+alembic==1.13.1
+
+# Task Scheduling
+APScheduler==3.10.1
+
+# Configuration
+python-dotenv==1.0.0
+
+# Testing and Development
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.12.1
+flake8==6.1.0
+
+# Security
+python-jose==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1

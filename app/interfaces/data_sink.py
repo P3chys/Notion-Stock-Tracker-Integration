@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List
-from models.position import Position
+from app.models.position import Position
 
 class DataSink(ABC):
     @abstractmethod

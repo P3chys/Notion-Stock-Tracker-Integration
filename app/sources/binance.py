@@ -5,8 +5,8 @@ import hashlib
 import time
 import requests
 from urllib.parse import urlencode
-from models.position import Position
-from interfaces.data_source import DataSource
+from app.models.position import Position
+from app.interfaces.data_source import DataSource
 from config.settings import Settings
 
 class BinanceSource(DataSource):

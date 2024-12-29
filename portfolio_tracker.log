@@ -1,0 +1,44 @@
+2024-12-29 02:01:30,853 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:01:44,824 - app.portfolio_tracker - INFO - Active sources updated: Trading212
+2024-12-29 02:01:44,824 - app.portfolio_tracker - INFO - Fetching positions from Trading212
+2024-12-29 02:01:45,640 - app.portfolio_tracker - INFO - Successfully fetched 18 positions from Trading212
+2024-12-29 02:01:45,640 - app.portfolio_tracker - INFO - Saving 18 positions to Notion
+2024-12-29 02:02:05,739 - app.portfolio_tracker - INFO - Successfully saved positions to Notion
+2024-12-29 02:03:59,450 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:04:15,708 - app.portfolio_tracker - INFO - Active sources updated: Trading212
+2024-12-29 02:04:15,708 - app.portfolio_tracker - INFO - Fetching positions from Trading212
+2024-12-29 02:04:16,502 - app.portfolio_tracker - INFO - Successfully fetched 18 positions from Trading212
+2024-12-29 02:04:16,502 - app.portfolio_tracker - INFO - Saving 18 positions to Notion
+2024-12-29 02:04:36,330 - app.portfolio_tracker - INFO - Successfully saved positions to Notion
+2024-12-29 02:04:38,115 - app.portfolio_tracker - INFO - Active sources updated: Debank
+2024-12-29 02:04:38,116 - app.portfolio_tracker - INFO - Fetching positions from Debank
+2024-12-29 02:04:38,116 - app.portfolio_tracker - ERROR - Error fetching positions from Debank: '_GeneratorContextManager' object has no attribute 'quit'
+2024-12-29 02:05:37,802 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:05:50,694 - app.portfolio_tracker - INFO - Active sources updated: Debank
+2024-12-29 02:05:50,694 - app.portfolio_tracker - INFO - Fetching positions from Debank
+2024-12-29 02:05:51,907 - app.services.web_driver - INFO - WebDriver instance created successfully
+2024-12-29 02:06:02,849 - app.services.web_driver - INFO - WebDriver instance closed successfully
+2024-12-29 02:06:04,020 - app.services.web_driver - INFO - WebDriver instance created successfully
+2024-12-29 02:06:14,772 - app.services.web_driver - INFO - WebDriver instance closed successfully
+2024-12-29 02:06:14,772 - app.portfolio_tracker - INFO - Successfully fetched 8 positions from Debank
+2024-12-29 02:06:14,773 - app.portfolio_tracker - INFO - Saving 8 positions to Notion
+2024-12-29 02:06:22,528 - app.portfolio_tracker - INFO - Successfully saved positions to Notion
+2024-12-29 02:08:24,661 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:10:12,607 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:13:53,335 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:16:14,179 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:16:54,668 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:17:20,736 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:17:38,210 - app.portfolio_tracker - INFO - Active sources updated: Trading212
+2024-12-29 02:17:38,211 - app.portfolio_tracker - INFO - Fetching positions from Trading212
+2024-12-29 02:17:38,978 - app.portfolio_tracker - INFO - Successfully fetched 18 positions from Trading212
+2024-12-29 02:17:38,978 - app.portfolio_tracker - INFO - Saving 18 positions to Notion
+2024-12-29 02:18:12,678 - app.portfolio_tracker - INFO - Successfully saved positions to Notion
+2024-12-29 02:20:41,485 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:25:49,086 - app - INFO - Portfolio Tracker startup
+2024-12-29 02:25:59,912 - app.portfolio_tracker - INFO - Active sources updated: Trading212
+2024-12-29 02:25:59,912 - app.portfolio_tracker - INFO - Fetching positions from Trading212
+2024-12-29 02:26:00,704 - app.portfolio_tracker - INFO - Successfully fetched 18 positions from Trading212
+2024-12-29 02:26:00,704 - app.portfolio_tracker - INFO - Saving 18 positions to Notion
+2024-12-29 02:26:14,689 - app.portfolio_tracker - INFO - Successfully saved positions to Notion
+2024-12-29 02:35:16,458 - app - INFO - Portfolio Tracker startup
